@@ -17,6 +17,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* ===== HEADER ====== */
+
 header {
   background-color: whitesmoke;
   width: 100%;
@@ -56,6 +58,15 @@ header {
 .links a:hover::after {
   width: 100%;
   transition: width 700ms ease-in-out;
+}
+
+/* ===== CARD ====== */
+
+.card {
+  background-color: white;
+  height: 70vh;
+  width: 80vw;
+  margin: 10vh auto;
 }
 
 
