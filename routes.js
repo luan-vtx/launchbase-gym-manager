@@ -1,4 +1,5 @@
 const express = require('express');
+const instructorsMiddleware = require('./middlewares/instructors');
 const routes = express.Router();
 
 routes.get('/', (req, res) => {
@@ -17,8 +18,6 @@ routes.get('/members', (req, res) => {
   return res.send('/members');
 });
 
-routes.post('/instructors', (req, res) => {
-  return res.send('recebido');
-});
+routes.post('/instructors', instructorsMiddleware.postInstructor);
 
 module.exports = routes;
